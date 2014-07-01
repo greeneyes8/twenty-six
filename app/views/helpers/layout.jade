@@ -1,0 +1,22 @@
+doctype html
+html
+	head
+		title= title
+		link(rel="stylesheet", href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css")
+		link(rel="stylesheet", href="css/ajaxify.css")
+		link(rel="stylesheet", href="css/twentysix.css")
+		script(src="http://code.jquery.com/jquery-latest.min.js")
+		script(src="//cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.2.1/jquery-migrate.min.js")
+		script(src="js/jquery.history.js")
+		script(src="js/ajaxify.min.js")
+		
+		block include
+
+	body
+		div#wrap
+			div#main
+				include header
+				block content
+				include footer
+
+		block script
